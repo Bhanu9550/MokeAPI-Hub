@@ -1,0 +1,10 @@
+@import url('../signin/Signin.css');
+
+.signup-page .auth-symbol {
+    background: #e4f8ee;
+    color: #16834a
+}
+
+.signup-page .auth-card {
+    box-shadow: 0 20px 65px #1e674512
+}
