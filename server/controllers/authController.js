@@ -87,8 +87,8 @@ authController.post("/signin", async (req, res) => {
     const token = createJWT(username);
     res.cookie("token", token, {
       httpOnly: true,
-    //   secure: process.env.NODE_ENV === "production",
-    //   sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
+      secure: true,
+      sameSite: "none",
       maxAge: 3 * 24 * 60 * 60 * 1000
     });
     return res.status(200).json({
@@ -121,8 +121,8 @@ authController.post("/logout", (req, res) => {
   try {
     res.clearCookie("token", {
       httpOnly: true,
-    //   secure: process.env.NODE_ENV === "production",
-    //   sameSite: process.env.NODE_ENV === "production" ? "none" : "lax"
+      secure: true,
+      sameSite: "none"
     });
 
     return res.status(200).json({
