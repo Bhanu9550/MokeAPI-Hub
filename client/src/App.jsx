@@ -3,8 +3,8 @@ import Landing from "./pages/landing/Landing";
 import Home from "./pages/home/Home";
 import Signin from "./pages/signin/Signin";
 import Signup from "./pages/signup/Signup";
-import PublicRoutes from "./routes/publicRoutes";
-import ProtectedRoutes from "./routes/protectedRoutes";
+import PublicRoutes from "./routes/publicRoutes.jsx";
+import ProtectedRoutes from "./routes/protectedRoutes.jsx";
 import "./App.css";
 
 export default function App() {
