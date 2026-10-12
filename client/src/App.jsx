@@ -4,7 +4,7 @@ import Home from "./pages/home/Home";
 import Signin from "./pages/signin/Signin";
 import Signup from "./pages/signup/Signup";
 import PublicRoutes from "./routes/publicRoutes.jsx";
-import ProtectedRoutes from "./routes/protectedRoutes.jsx";
+import ProtectedRoutes from "./routes/ProtectedRoutes.jsx";
 import "./App.css";
 
 export default function App() {
